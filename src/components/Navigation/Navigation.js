@@ -13,7 +13,7 @@ const Navigation = () => {
   return (
     <Navbar bg="dark" expand="lg" variant="dark">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="/home">Food Land</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -21,9 +21,14 @@ const Navigation = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Link to="/">Home</Link>
+            <Link to="/" className="text-white text-decoration-none mx-3">
+              {" "}
+              Home
+            </Link>
 
-            <Link to="/about">About</Link>
+            <Link to="/about" className="text-white text-decoration-none mx-3">
+              About
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
