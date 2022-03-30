@@ -10,7 +10,7 @@ const Search = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 ">
       <section className="d-flex ">
         <Form className="d-flex w-50 mb-5 ">
           <FormControl
@@ -20,11 +20,11 @@ const Search = () => {
             aria-label="Search"
             onChange={findMealsByName}
           />
+          <button className="btn btn-success" onClick={() => findMealsByName}>
+            {" "}
+            Search
+          </button>
         </Form>
-        <button className="btn btn-success" onClick={() => findMealsByName}>
-          {" "}
-          Search
-        </button>
       </section>
 
       {searchText ? (
