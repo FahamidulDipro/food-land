@@ -15,7 +15,9 @@ const MealLoad = (props) => {
 
   return meals ? (
     <div className="mt-5 container">
-      <h2 className="my-5 text-start">{meals.length} Results Found</h2>
+      <h2 className="my-5 text-start container">
+        {meals.length} Results Found
+      </h2>
       <Container>
         <Row>
           {meals.map((meal) => (

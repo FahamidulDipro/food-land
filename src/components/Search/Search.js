@@ -11,8 +11,8 @@ const Search = () => {
 
   return (
     <div className="container mt-5">
-      <section className="d-flex">
-        <Form className="d-flex w-50 mb-5">
+      <section className="d-flex ">
+        <Form className="d-flex w-50 mb-5 ">
           <FormControl
             type="search"
             placeholder="Search"

@@ -10,7 +10,7 @@ const Meal = (props) => {
         <Card.Body>
           <Card.Title>{strMeal}</Card.Title>
           <Card.Text>
-            <button className="btn btn-primary">Click</button>
+            <button className="btn btn-primary">See Details</button>
           </Card.Text>
         </Card.Body>
       </Card>
