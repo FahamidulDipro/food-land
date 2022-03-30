@@ -11,9 +11,11 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <Navbar bg="dark" expand="lg" variant="dark">
+    <Navbar bg="warning" expand="lg" variant="light">
       <Container fluid>
-        <Navbar.Brand href="/home">Food Land</Navbar.Brand>
+        <Navbar.Brand href="/home" className="fw-bold">
+          Food Land
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -21,12 +23,18 @@ const Navigation = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Link to="/" className="text-white text-decoration-none mx-3">
+            <Link
+              to="/"
+              className="text-dark text-decoration-none mx-3 fw-bold"
+            >
               {" "}
               Home
             </Link>
 
-            <Link to="/about" className="text-white text-decoration-none mx-3">
+            <Link
+              to="/about"
+              className="text-black text-decoration-none mx-3 fw-bold"
+            >
               About
             </Link>
           </Nav>

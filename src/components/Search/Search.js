@@ -10,7 +10,7 @@ const Search = () => {
   };
 
   return (
-    <div className="container mt-5 ">
+    <div className="container mt-5 bg-light p-3" style={{ minHeight: "50vh" }}>
       <section className="d-flex ">
         <Form className="d-flex w-50 mb-5 ">
           <FormControl
@@ -20,7 +20,7 @@ const Search = () => {
             aria-label="Search"
             onChange={findMealsByName}
           />
-          <button className="btn btn-success" onClick={() => findMealsByName}>
+          <button className="btn btn-success" type="button">
             {" "}
             Search
           </button>

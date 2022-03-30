@@ -11,13 +11,19 @@ const Meal = (props) => {
     navigate(path);
   };
   return (
-    <Col lg={3} className="my-3">
-      <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={strMealThumb} />
+    <Col lg={3} className="m-3">
+      <Card
+        style={{
+          width: "20rem",
+          padding: "20px",
+          backgroundColor: "orange",
+        }}
+      >
+        <Card.Img variant="top" src={strMealThumb} className="rounded" />
         <Card.Body>
           <Card.Title>{strMeal}</Card.Title>
           <Card.Text>
-            <button className="btn btn-primary" onClick={showMealDetail}>
+            <button className="btn btn-dark" onClick={showMealDetail}>
               See Details
             </button>
           </Card.Text>

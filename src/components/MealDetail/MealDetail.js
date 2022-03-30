@@ -21,9 +21,9 @@ const MealDetail = () => {
         style={{ height: "50vh", objectFit: "cover" }}
       />
       <Card.Body>
-        <Card.Text>
+        <Card.Text className="text-start">
           <h3>
-            <span className="text-warning">{strMeal}</span>{" "}
+            <span className="text-warning ">{strMeal}</span>{" "}
             <span>is a delicious {strArea} dish</span>
           </h3>
           {strInstructions}
